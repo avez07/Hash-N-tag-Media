@@ -25,8 +25,11 @@ export default function Home() {
           </Col>
           <Col>
           <div className="option-Tab">
-            <p className="fw-semibold product-option-tab active">Product Option</p>
-            <p>Sites Shiping</p>
+            <p className="fw-semibold product-option-tab ">Product Option</p>
+            <p className="active">Sites Shiping</p>
+            <div>
+              
+            </div>
           </div>
           </Col>
         </Row>

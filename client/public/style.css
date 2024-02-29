@@ -64,6 +64,7 @@ nav svg{
     text-transform: capitalize;
     background-color: #dddddd;
     justify-content: space-between;
+    position: relative;
 }
 .option-Tab p{
     width: 50%;
@@ -73,6 +74,11 @@ nav svg{
 }
 .product-option-tab{
     background: #005287;
+    color: #fff;
+
+}
+.option-Tab:first-child .active::after{
+background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTAwIDQwMCI+CiAgICA8cG9seWdvbiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHBvaW50cz0iMCwwIDEwMCwyMDAgMCw0MDAiIGZpbGw9IiNmZmYiLz4KICAgIDxwb2x5Z29uIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcG9pbnRzPSItMTAsMCA5MCwyMDAgLTEwLDQwMCIgZmlsbD0iIzE5OTRkMiIvPgo8L3N2Zz4=') !important;
 }
 .product-option-tab::after{
     content: '';
@@ -80,6 +86,10 @@ nav svg{
     width: 20px;
     position: absolute;
     z-index: 2;
+    top: -4px;
+    left: 50%;
+    height: 66px;
+    background-repeat: no-repeat;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTAwIDQwMCI+CiAgICA8cG9seWdvbiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHBvaW50cz0iMCwwIDEwMCwyMDAgMCw0MDAiIGZpbGw9IiNmZmYiLz4KICAgIDxwb2x5Z29uIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcG9pbnRzPSItMTAsMCA5MCwyMDAgLTEwLDQwMCIgZmlsbD0iIzAwNTI4NyIvPgo8L3N2Zz4=');
 }
 .option-Tab .active{
