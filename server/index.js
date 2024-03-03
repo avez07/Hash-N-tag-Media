@@ -19,20 +19,20 @@ app.post('/getData', async (req, res) => {
    try {
     let query  = 'SELECT ';
     let whereClause = " WHERE 1 "
-    let groupByClause = '';
+    let groupByClause = ' ';
     for (const [key, value] of Object.entries(data)) {
         if (value !== '') {
         //   query += `${key}, `;
           whereClause += `AND ${key} = '${value}'  `;
         } else {
             query += `${key}, `;
-          groupByClause = key;
+          groupByClause = `GROUP BY ${key}`;
           break;
         }
     }
-        query = query.slice(0, -2);
+        // query = query.slice(0, -2);
         // whereClause = whereClause.slice(0, -5);
-        query += ` ,rate FROM flyers_brochures ${whereClause !== ' WHERE ' ? whereClause : ''} GROUP BY ${groupByClause}`;
+        query += ` rate FROM flyers_brochures ${whereClause !== ' WHERE ' ? whereClause : ''}  ${groupByClause}`;
         const [rows] = await db.query(query).catch(error => {
             console.error("Error executing query:", error);
             throw new Error("Error executing query");

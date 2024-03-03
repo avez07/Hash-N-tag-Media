@@ -36,16 +36,7 @@ export default function Home() {
     console.log(sizeOptions);
   }, [title, size, stock, colorspec, coating, folding_options, digital_proofs, job_samples])
 
-  const getTitle = async () => {
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow"
-    };
-    fetch("http://localhost:8000/title", requestOptions)
-      .then((response) => response.text())
-      .then((result) => setTitileOption(JSON.parse(result)))
-      .catch((error) => console.error(error));
-  }
+  
   const getData = async (e) => {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
