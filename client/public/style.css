@@ -96,3 +96,31 @@ background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy5
     background: #1994d2 !important;
     color: #fff;
 }
+/* table  */
+
+#My-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #My-table td, #My-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #My-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #My-table tr:hover {background-color: #ddd;}
+  
+  #My-table th {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    background-color: #1994d2;
+    color: white;
+  }
+  input[name="Mp"] {
+    width: 30px;
+    text-align: center;
+  }
