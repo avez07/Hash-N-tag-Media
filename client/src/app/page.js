@@ -208,7 +208,7 @@ export default function Home() {
               <div className="d-flex justify-content-betwwen align-items-center mt-4">
                 <label className="fw-semibold" style={{ width: '30%' }}>Coating<span className="text-danger">*</span></label>
                 <Form.Select onChange={handleSelectChange} disabled={!colorspec ? true : false} name="Coating" value={coating} style={{ width: '70%' }} aria-label="Default select example">
-                  <option>Select Coation</option>
+                  <option>Select Coating</option>
                   {Array.isArray(coatingOptions) && coatingOptions.map((item, index) => (
                     <option key={index} value={item}>
                       {item}
