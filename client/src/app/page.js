@@ -125,7 +125,6 @@ export default function Home() {
         break;
         case "Mp":
           setMarketPrice(value)
-      // Add cases for other select fields as needed
       default:
         break;
     }
